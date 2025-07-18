@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal_project\\hw07\\hw07\\source\\hw07\\hw07.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal_project\\hw07\\hw07\\intermediate\\build\\win64\\x64\\hw07editor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\unreal_project\\hw07\\hw07\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\hw07\\definitions.hw07.h",
+            "d:\\unreal_project\\hw07\\hw07\\source\\hw07\\hw07.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

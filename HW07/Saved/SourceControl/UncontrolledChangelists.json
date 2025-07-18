@@ -1,0 +1,20 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Unreal_Project/HW07/HW07/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/BPHWPawn.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/IMC_HW.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/IA_Move_HW.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/IA_Look_HW.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/BPHWPlayerController.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+				"D:/Unreal_Project/HW07/HW07/Content/BP_HW_GameMode.uasset",
+				"D:/Unreal_Project/HW07/HW07/Content/BP_HWPawn.uasset"
+			]
+		}
+	]
+}
