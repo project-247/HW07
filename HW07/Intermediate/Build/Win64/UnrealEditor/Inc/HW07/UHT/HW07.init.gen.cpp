@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeHW07_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x73568266,
+				0xD984BD9A,
 				0x269DAA2A,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeHW07_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_HW07.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_HW07(Z_Construct_UPackage__Script_HW07, TEXT("/Script/HW07"), Z_Registration_Info_UPackage__Script_HW07, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x73568266, 0x269DAA2A));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_HW07(Z_Construct_UPackage__Script_HW07, TEXT("/Script/HW07"), Z_Registration_Info_UPackage__Script_HW07, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD984BD9A, 0x269DAA2A));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -27,7 +27,8 @@ AHWPawn::AHWPawn()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(SpringArm);
 
-	MoveSpeed = 100.f;
+	MoveSpeed = 300.f;
+	RotSpeed = 45.f;
 }
 
 // Called when the game starts or when spawned
@@ -62,6 +63,29 @@ void AHWPawn::Move(const FInputActionValue& Value)
 void AHWPawn::Look(const FInputActionValue& Value)
 {
 	FVector2D LookInput = Value.Get<FVector2D>();
+
+	// 마우스 좌우 이동 -> 폰 회전
+	// 마우스 상하 이동 -> 스프링암 회전
+
+	if (!LookInput.IsNearlyZero())
+	{
+		// 마우스의 좌우 이동
+		{
+			// Yaw
+			FRotator DeltaRotation = GetActorRotation();
+			DeltaRotation.Yaw += RotSpeed * LookInput.X * GetWorld()->GetDeltaSeconds();
+			SetActorRotation(DeltaRotation);
+		}
+
+		// 마우스의 상하 이동
+		{
+			// Pitch
+			FRotator DeltaRotation = SpringArm->GetRelativeRotation();
+			DeltaRotation.Pitch += RotSpeed * LookInput.Y * GetWorld()->GetDeltaSeconds();
+			DeltaRotation.Pitch = FMath::Clamp(DeltaRotation.Pitch, -80.f, 5.f);
+			SpringArm->SetRelativeRotation(DeltaRotation);
+		}
+	}
 }
 
 // Called every frame

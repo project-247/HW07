@@ -51,5 +51,7 @@ private:
 	UPROPERTY(EditAnywhere)
 	float MoveSpeed;
 
+	UPROPERTY(EditAnywhere)
+	float RotSpeed;
 
 };

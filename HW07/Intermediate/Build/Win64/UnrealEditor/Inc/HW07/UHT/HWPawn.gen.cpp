@@ -61,12 +61,17 @@ struct Z_Construct_UClass_AHWPawn_Statics
 		{ "Category", "HWPawn" },
 		{ "ModuleRelativePath", "HWPawn.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RotSpeed_MetaData[] = {
+		{ "Category", "HWPawn" },
+		{ "ModuleRelativePath", "HWPawn.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CapsuleComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SkeletalMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArm;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_RotSpeed;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -79,12 +84,14 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHWPawn_Static
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHWPawn_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x0144000000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AHWPawn, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpringArm_MetaData), NewProp_SpringArm_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHWPawn_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x0144000000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AHWPawn, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FollowCamera_MetaData), NewProp_FollowCamera_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHWPawn_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AHWPawn, MoveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveSpeed_MetaData), NewProp_MoveSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHWPawn_Statics::NewProp_RotSpeed = { "RotSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AHWPawn, RotSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotSpeed_MetaData), NewProp_RotSpeed_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHWPawn_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_CapsuleComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_SkeletalMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_SpringArm,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_FollowCamera,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_MoveSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHWPawn_Statics::NewProp_RotSpeed,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AHWPawn_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AHWPawn_Statics::DependentSingletons[])() = {
@@ -127,10 +134,10 @@ AHWPawn::~AHWPawn() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Project_HW07_HW07_Source_HW07_HWPawn_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AHWPawn, AHWPawn::StaticClass, TEXT("AHWPawn"), &Z_Registration_Info_UClass_AHWPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHWPawn), 1160368216U) },
+		{ Z_Construct_UClass_AHWPawn, AHWPawn::StaticClass, TEXT("AHWPawn"), &Z_Registration_Info_UClass_AHWPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHWPawn), 2968249189U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_HW07_HW07_Source_HW07_HWPawn_h_673020971(TEXT("/Script/HW07"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_HW07_HW07_Source_HW07_HWPawn_h_3240726997(TEXT("/Script/HW07"),
 	Z_CompiledInDeferFile_FID_Unreal_Project_HW07_HW07_Source_HW07_HWPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Project_HW07_HW07_Source_HW07_HWPawn_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
